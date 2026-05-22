@@ -83,7 +83,7 @@ def predict_fraud(data: TransactionData):
 
     is_fraud = True if prediction == 1 else False
     
-    # --- TEMPORARY OVERRIDE FOR TESTING ---
+    # -- TEMPORARY OVERRIDE FOR TESTING --
     if data.amount > 500:
         is_fraud = True
         probability = 0.99

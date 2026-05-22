@@ -9,7 +9,7 @@ print("🎓 Training XGBoost Fraud Detection Model...")
 df = pd.read_csv('data/raw_transactions.csv')
 
 # 2. Prepare the Data (Feature Engineering)
-# For this prototype, we'll use Amount and a dummy 'Time_Since_Last' feature
+# For this prototype, we will use Amount and a dummy 'Time_Since_Last' feature
 # In reality, you'd calculate time gaps from historical data
 df['Time_Since_Last'] = df['TransactionAmount'].apply(lambda x: 10 if x > 800 else 86400) 
 

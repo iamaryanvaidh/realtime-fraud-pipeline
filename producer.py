@@ -3,7 +3,7 @@ from confluent_kafka import Producer
 import json
 import time
 
-# 1. Connect to Kafka using the official Confluent library
+# 1. Connect to Kafka using the official Confluent Library
 producer = Producer({'bootstrap.servers': 'localhost:9092'})
 
 TOPIC_NAME = 'bank-transactions'

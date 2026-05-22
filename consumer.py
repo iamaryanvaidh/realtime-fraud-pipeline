@@ -47,7 +47,7 @@ try:
         txn_time_str = transaction.get('TransactionDate', transaction.get('Time', 'N/A'))
         amount = transaction.get('TransactionAmount', transaction.get('Amount', 0))
 
-        # --- REDIS FEATURE ENGINEERING ---
+        # -- REDIS FEATURE ENGINEERING --
         last_time_str = r.get(f"user:{customer_id}:last_txn")
         r.set(f"user:{customer_id}:last_txn", txn_time_str)
 
