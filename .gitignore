@@ -1,7 +1,14 @@
-.env
+# Environments
 env/
 __pycache__/
 .ipynb_checkpoints/
+
+# Secrets
+.env
+
+# Data and Models
+data/
+*.pkl
+
 prev_model_api.py/
 check_db.py/
-*.pkl
