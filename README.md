@@ -34,7 +34,7 @@ Data Generator ➔ Kafka Topic ➔ Consumer + Redis Cache ➔ FastAPI + XGBoost 
 
 **1. Clone the repository & Install required libraries**
 ```bash
-git clone https://github.com/Aryanvaidh1712/real-time-fraud-pipeline
+git clone https://github.com/iamaryanvaidh/real-time-fraud-pipeline
 cd real-time-fraud-pipeline
 pip install -r requirements.txt
 ```
